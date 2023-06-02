@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+    padding: 20px;
+}
+
+.items {
+    height: 100%;
+    width: 60%;
+}
+
+.items ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.items ul li {
+    font-size: 1.3rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.buyuk {
+    text-transform: uppercase;
+}
+
+#sub {
+    background-color: black;
+    color: white;
+    padding: 0 40px;
+}
+
+#news {
+    border-bottom: 3px solid goldenrod;
+    height: auto;
+    position: relative;
+}
+
+#news::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: goldenrod;
+    transition: all 0.5s ease;
+}
+
+#news:hover::after {
+    height: 100%;
+    z-index: -1;
+}
+
+
+img {
+    width: 150px;
+}
+
+.text-container {
+    width: 100%;
+    margin: 250px auto 0 auto;
+}
+
+.kapsayici{
+    width: 60%;
+    margin: 0 auto 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.kapsayici::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 5px;
+    background-color: #fc0;
+    left: 50%;
+    bottom: -30%;
+}
+
+.kapsayici h1{
+    text-transform: uppercase;
+    font-size: 54px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+.text-container{
+    margin-top: 20px;
+}
+.card {
+
+    width: 50%;
+    display: flex
+}
+.card h4 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 0 0 10px;
+}
+
+.card h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card img {
+    margin-top: 20px;
+    width: 120px;
+    height: 160px;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 0 0 10px;
+    font-weight: 600;
+}
+
+.card p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.kapsayici p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.kapsayici a{
+    color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    display: inline-block;
+    position: relative;
+}
+.kapsayici a:hover{
+    color: #000;
+}
+.kapsayici a::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fc0;
+    left: 0;
+    bottom: 0;
+    transition: height 0.2s ease;
+    z-index: -1;
+
+}
+.kapsayici a:hover::after {
+    height: 100%;
+}
+.b-card{
+    background: url(./images/dino.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+.clas{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.büyük{
+    display: flex;
+    margin-right: 10px;
+}
